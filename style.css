@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/*  ----------------------- HEADER ----------------------- */
+.header{
+    background-color: rgb(236, 197, 137);
+    position: fixed;
+    top:0%;
+    width: 100%;
+    border-radius: 0 0 10px 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1{
+    color: black;
+}
+
+body{
+margin-top: 8rem;
+margin-bottom: 8rem;
+}
+
+ul{
+    list-style-type:none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar h1{
+    margin: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+} 
+
+.logo{
+    margin-right: 15rem;
+}
+
+li{
+    padding: 1rem;
+    border-radius: 5%;
+    margin: 2rem;
+    background-color: rgb(231, 116, 116);
+}
+
+
+/*  ----------------------- BODY ----------------------- */
+
+.verduras{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: bisque;
+    width: 20rem;
+    border: 2rem;
+    padding: 0.8rem;
+    border-radius: 5%;
+    margin: 1.5rem;
+    
+}
+
+.card img{
+    width: 100%;
+    height: 70%;
+}
+
+.card div{
+    display: flex;
+    justify-content: space-between;
+}
+.card div a{
+    background-color: rgb(211, 228, 243);
+    padding: 0.3rem;
+}
+
+.grid_about_us{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 3rem min-content;
+    grid-template-areas: 
+    "img title"
+    "img parrafo"
+    ;
+    justify-items: center;
+    gap: 1rem;
+    font-family: arial;
+}
+
+.grid_about_us_img
+{
+    grid-area: img;
+    width: 100%;
+}
+
+.grid_about_us_title
+{
+    grid-area: title;
+    margin: 0.5rem;
+}
+
+.grid_about_us_parrafo
+{
+    grid-area: parrafo;
+}
+
+.formulario{
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  ----------------------- FOOTER ----------------------- */
+
+footer{
+    background-color: rgb(236, 197, 137);
+    border-radius: 10px 10px 0px 0px; 
+    padding: 1.5rem; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
+.redes{
+    width: 6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.redes img{
+    display: block;
+    width: 2rem;
+    height: 70%;
+    margin-left: 0.5rem;
+}
+
+footer p{
+font-size: 0.8rem;
+}
