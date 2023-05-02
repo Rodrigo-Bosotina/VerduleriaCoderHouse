@@ -97,8 +97,8 @@ li{
     grid-template-columns: 50% 50% ;
     grid-template-rows: 3rem min-content;
     grid-template-areas: 
-    "img title"
-    "img parrafo"
+    "img_au title_au"
+    "img_au parrafo_au"
     ;
     justify-items: center;
     gap: 1rem;
@@ -107,19 +107,19 @@ li{
 
 .grid_about_us_img
 {
-    grid-area: img;
+    grid-area: img_au;
     width: 100%;
 }
 
 .grid_about_us_title
 {
-    grid-area: title;
+    grid-area: title_au;
     margin: 0.5rem;
 }
 
 .grid_about_us_parrafo
 {
-    grid-area: parrafo;
+    grid-area: parrafo_au;
 }
 
 .formulario{
@@ -127,6 +127,68 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid_user
+{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-areas:
+    "img_u ..."
+    "nom_u ..."
+    "ape_u ..."
+    "mail_u ..."
+    "dir_u ..."
+    "tar_u ..."
+    "bot_u ..."
+    ;
+    justify-items: left;
+    gap: 1rem;
+    font-family: arial;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.grid_user_img
+{
+    grid-area: img_u;
+    width: 30%;
+}
+
+.grid_user_name
+{
+    grid-area:nom_u;
+}
+
+.grid_user_mail
+{
+    grid-area: mail_u;
+}
+.grid_user_surname
+{
+grid-area: ape_u;
+}
+
+.grid_user_direction
+{
+    grid-area: dir_u;
+}
+
+.grid_user_card
+{
+    display: flex;
+    grid-area: tar_u;
+}
+
+.grid_user_card img
+{
+    width: 10%;
+}
+
+.grid_user_button
+{
+    grid-area: bot_u;
 }
 
 /*  ----------------------- FOOTER ----------------------- */
