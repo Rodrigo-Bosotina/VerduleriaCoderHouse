@@ -16,7 +16,7 @@
                 <ul class="menu">
                     <a href="../index.html"><h1>VerduARG</h1></a>
                     <li><a href="./about-us.html">Acerca de</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="#">Contacto</a></li>
                     <li><a href="./carrito.html">Carrito de compra</a></li>
                     <li><a href="./usuario.html">Usuario</a></li>
                 </ul>
@@ -26,22 +26,12 @@
     <br>
     <main>
         <form class="formulario" action="">
-            <fieldset>
-                <legend>Correo</legend>
-                <label for="Asunto">Ingrese el Asunto del correo</label>
-                <br>
-                <input id="Asunto" type="text" placeholder="Error con el pago">
-                <br>
-                <label for="Correo"> Escriba su correo </label>
-                <br>
-                <textarea name="Correo" id="" cols="30" rows="10"></textarea>
-                
-                <br>
-                <div class="formulario_button">
-                    <input type="submit" value="Enviar Correo">
-                    <input type="reset" value="Borrar Correo">
-                </div>
-            </fieldset>
+            <h2> Correo </h2>
+            <!-- Puse el nombre como un h3, en lugar de un imput, ya que pense mi pagina como un sitio en el que te tenés que loggear para poder hacer cualquier cosa-->
+            <h3> Nombre: Rodrigo Bosotina </h3> 
+            <input class="formulario_input" id="Asunto" type="text" placeholder="Asunto">
+            <textarea class="formulario_input" name="Correo" placeholder="Escriba su Correo"></textarea>
+            <input class="formulario_input" type="submit" value="Enviar Correo" id="formulario_boton">
         </form>
     </main>
 

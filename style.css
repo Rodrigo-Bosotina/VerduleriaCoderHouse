@@ -9,6 +9,9 @@ a
 }
 
 /*  ----------------------- HEADER ----------------------- */
+.navbar_mobile{
+display: none;
+}
 .header{
     background-color: rgb(236, 197, 137);
     position: fixed;
@@ -123,23 +126,41 @@ li{
 }
 
 .formulario{
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    width: 40%;
+    background-color: bisque;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.formulario_input{
+    width: 100%;
+    margin-bottom:1rem ;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+form h2{
+    text-align: center;
+}
+
+form h3{
+    margin: 1rem;
 }
 
 .grid_user
 {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: min-content min-content min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas:
     "img_u ..."
     "nom_u ..."
     "ape_u ..."
     "mail_u ..."
     "dir_u ..."
+    "tel_u ..."
     "tar_u ..."
     "bot_u ..."
     ;
@@ -186,10 +207,15 @@ grid-area: ape_u;
     width: 10%;
 }
 
+.grid_user_tel{
+    grid-area: tel_u;
+}
+
 .grid_user_button
 {
     grid-area: bot_u;
 }
+
 
 /*  ----------------------- FOOTER ----------------------- */
 
@@ -222,4 +248,19 @@ footer{
 
 footer p{
 font-size: 0.8rem;
+}
+
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+
+@media screen and (max-width:1200px){
+    
+}
+
+@media screen and (max-width:780px){
+    
+}
+
+@media screen and (max-width:480px){
+
 }
