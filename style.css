@@ -10,6 +10,10 @@ a
     text-decoration: none;
 }
 
+ul{
+    list-style-type:none;
+}
+
 /*  ----------------------- HEADER ----------------------- */
 nav {
     display: flex;
@@ -18,32 +22,30 @@ nav {
     height: 75px;
     line-height: 75px;
     background: rgb(236, 197, 137);
+
 }
 
-nav .navbar-marca{
+nav .nav_logo{
     color: #000000;
     font-size: 28px;
     font-weight: 500;
     letter-spacing: .5px;
 }
 
-nav .nav-ul {
+nav .nav_paginas {
     display: flex;
 }
 
-nav .nav-ul .nav-item {
+nav .nav_paginas .nav_pag {
     cursor: pointer;
     height: 100%;
     padding: 0 30px;
     transition: .4s;
+    color:#000000;
 }
 
-nav .nav-ul .nav-item:hover {
+nav .nav_paginas .nav_pag:hover {
     background: #b4954b;
-}
-
-ul{
-    list-style-type:none;
 }
 
 header input {
@@ -57,6 +59,9 @@ main
     margin-top:1rem;
     margin-bottom: 8rem;
 }
+
+/* --------------------------- INDEX ---------------------------*/
+
 .verduras{
     display:flex;
     justify-content: center;
@@ -86,6 +91,8 @@ main
     background-color: rgb(211, 228, 243);
     padding: 0.3rem;
 }
+
+/* --------------------------- GRID ABOUT US ---------------------------*/
 
 .grid_about_us{
     display: grid;
@@ -117,13 +124,15 @@ main
     grid-area: parrafo_au;
 }
 
+
+/* --------------------------- FORMULARIO ---------------------------*/
+
 .formulario{
-    margin: auto;
+    margin: 5% auto;
     width: 40%;
-    background-color: bisque;
+    background-color:#b4954b;
     padding: 1rem;
     box-sizing: border-box;
-    border-radius: 5%;
 }
 
 .formulario_input{
@@ -141,22 +150,23 @@ form h3{
     margin: 1rem;
 }
 
+/* --------------------------- GRID USUARIO ---------------------------*/
 .grid_user
 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 100%;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
     grid-template-areas:
-    "img_u ..."
-    "nom_u ..."
-    "ape_u ..."
-    "mail_u ..."
-    "dir_u ..."
-    "tel_u ..."
-    "tar_u ..."
-    "bot_u ..."
+    "img_u"
+    "nom_u"
+    "ape_u"
+    "mail_u"
+    "dir_u"
+    "tel_u"
+    "tar_u"
+    "bot_u"
     ;
-    justify-items: left;
+    justify-items: center;
     gap: 1rem;
     font-family: arial;
     margin-left: 2rem;
@@ -166,21 +176,24 @@ form h3{
 .grid_user_img
 {
     grid-area: img_u;
-    width: 30%;
+    width: 20%;
 }
 
 .grid_user_name
 {
     grid-area:nom_u;
+    z-index: 2;
 }
 
 .grid_user_mail
 {
     grid-area: mail_u;
+    z-index: 2;
 }
 .grid_user_surname
 {
 grid-area: ape_u;
+z-index: 2;
 }
 
 .grid_user_direction
@@ -191,12 +204,13 @@ grid-area: ape_u;
 .grid_user_card
 {
     display: flex;
+    justify-content: center;
     grid-area: tar_u;
 }
 
 .grid_user_card img
 {
-    width: 10%;
+    width: 5%;
 }
 
 .grid_user_tel{
@@ -208,8 +222,23 @@ grid-area: ape_u;
     grid-area: bot_u;
 }
 
+.cambiar_imagen{
+    display: none;
+    position: absolute;
+    grid-area: img_u;
+    width: 30%;
+    z-index: 1;
+}
 
+.grid_user_img:hover ~ .cambiar_imagen{
+    display:block;
+    opacity: 70%;
+}   
 
+.boton:hover
+{
+    background-color: #b4954b;
+}
 /*  ----------------------- FOOTER ----------------------- */
 
 footer{
@@ -247,22 +276,44 @@ font-size: 0.8rem;
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
 
-@media screen and (max-width:1200px){
-    
-}
-
 @media screen and (max-width:780px){
-    nav .nav-ul .nav-item {
-        padding: 0 15px;
-    }
+
+    /* -------------------------- NAV -------------------------- */
+
     nav {
         justify-content: space-around;
     }
+
+    nav .nav_paginas .nav_pag {
+        padding: 0 15px;
+    }
+
+    /* -------------------------- CONTACTO -------------------------- */
+
+    .formulario{
+        margin: 3% auto;
+        width: 60%;
+    }
     
+    /* -------------------------- USER -------------------------- */
+
+    .grid_user_img{
+        width: 25%;
+    }
+    
+    .cambiar_imagen{
+        width: 40%;
+    }
+
+    .grid_user_card img{
+        width: 10%
+    }
 }
 
 @media screen and (max-width:500px){
-    nav .nav-ul {
+
+    /* -------------------------- NAV -------------------------- */
+    nav .nav_paginas {
         display: grid;
         position: absolute;
         background: rgb(236, 197, 137);
@@ -274,28 +325,28 @@ font-size: 0.8rem;
         transition: .6s;
     }
 
-    nav .nav-ul .nav-item {
+    nav .nav_paginas .nav_pag {
         padding-left: 35px;
         text-align: center;
     }
 
-    nav .nav-ul .nav-item .nav-link{
+    nav .nav_paginas .nav_pag .nav-link{
         padding: auto;
         width: 100%;
     }
 
-    nav .navbar-menu_hamburguesa {
+    nav .nav_menu {
         display: grid !important;
     }
 
-    nav .navbar-menu_hamburguesa {
+    nav .nav_menu {
         display: none;
         height: min-content;
         margin: 18px -10px 0 0;
         cursor: pointer;
     }
 
-    nav .navbar-menu_hamburguesa .bar {
+    nav .nav_menu .bar {
         width: 40px;
         height: 5px;
         margin-bottom: 10px;
@@ -303,33 +354,56 @@ font-size: 0.8rem;
         border-radius: 10%;
         transition: .4s;
     }
+
     input:checked ~ nav{
-        margin-bottom: 20rem;
+        margin-bottom: 24rem;
     }
 
-    input:checked ~ nav .nav-ul {
+    input:checked ~ nav .nav_paginas {
         transform: translateY(0);
         z-index: 1;
     
     }
 
-
-    input:checked ~ nav .navbar-menu_hamburguesa {
+    input:checked ~ nav .nav_menu {
         margin-top: 35px;
     }
     
-    input:checked ~ nav .navbar-menu_hamburguesa .bar:nth-child(1) {
+    input:checked ~ nav .nav_menu .bar:nth-child(1) {
         position: absolute;
         transform: rotate(45deg);
     }
 
-    input:checked ~ nav .navbar-menu_hamburguesa .bar:nth-child(2) {
+    input:checked ~ nav .nav_menu .bar:nth-child(2) {
         display: none;
     }
     
-    input:checked ~ nav .navbar-menu_hamburguesa .bar:nth-child(3) {
+    input:checked ~ nav .nav_menu .bar:nth-child(3) {
         transform: rotate(-45deg);
     }
+
+
+    /* -------------------------- CONTACTO -------------------------- */
+
+    .formulario{
+        width: 70%;
+    }
+
+    /* -------------------------- USER -------------------------- */
+
+    .grid_user_img{
+        width: 40%;
+    }
+
+    .cambiar_imagen
+    {
+        width: 50%;
+    }
+    .grid_user_card img{
+        width: 15%;
+    }
+
+/* -------------------------- FOOTER -------------------------- */
 
     footer div p, footer div em{
         font-size: 8px;
