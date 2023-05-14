@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
+    font-size: 13px;
 }
 
 a
@@ -229,6 +230,7 @@ footer{
     justify-content: flex-end;
     align-items: center;
     margin-right: 3rem;
+    margin-left: 3rem;
 }
 
 .redes img{
@@ -250,10 +252,16 @@ font-size: 0.8rem;
 }
 
 @media screen and (max-width:780px){
+    nav .nav-ul .nav-item {
+        padding: 0 15px;
+    }
+    nav {
+        justify-content: space-around;
+    }
     
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:500px){
     nav .nav-ul {
         display: grid;
         position: absolute;
@@ -323,4 +331,7 @@ font-size: 0.8rem;
         transform: rotate(-45deg);
     }
 
+    footer div p, footer div em{
+        font-size: 8px;
+    }
 }
