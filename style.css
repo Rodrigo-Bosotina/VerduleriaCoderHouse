@@ -32,6 +32,14 @@ nav .nav_logo{
     letter-spacing: .5px;
 }
 
+.arg_celeste{
+    color:#6bbfe0!important;
+}
+
+.arg_blanco{
+    color:white!important;
+}
+
 nav .nav_paginas {
     display: flex;
 }
@@ -92,7 +100,7 @@ main
     padding: 0.3rem;
 }
 
-/* --------------------------- GRID ABOUT US ---------------------------*/
+/* --------------------------- ABOUT US ---------------------------*/
 
 .grid_about_us{
     display: grid;
@@ -105,6 +113,7 @@ main
     justify-items: center;
     gap: 1rem;
     font-family: arial;
+    margin-bottom: 10rem;
 }
 
 .grid_about_us_img
@@ -123,7 +132,6 @@ main
 {
     grid-area: parrafo_au;
 }
-
 
 /* --------------------------- FORMULARIO ---------------------------*/
 
@@ -177,6 +185,7 @@ form h3{
 {
     grid-area: img_u;
     width: 20%;
+    cursor: pointer;
 }
 
 .grid_user_name
@@ -227,12 +236,14 @@ z-index: 2;
     position: absolute;
     grid-area: img_u;
     width: 30%;
+    cursor: pointer;
     z-index: 1;
 }
 
 .grid_user_img:hover ~ .cambiar_imagen{
     display:block;
     opacity: 70%;
+    
 }   
 
 .boton:hover
