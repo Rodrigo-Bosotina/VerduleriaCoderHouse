@@ -21,7 +21,7 @@ nav {
     padding: 0 15%;
     height: 75px;
     line-height: 75px;
-    background:#31B189;
+    background: rgb(236, 197, 137);
 
 }
 
@@ -61,10 +61,6 @@ main
 }
 
 /* --------------------------- INDEX ---------------------------*/
-
-body{
-    background-color: #FFC872;
-}
 
 .verduras{
     display:flex;
@@ -246,7 +242,7 @@ z-index: 2;
 /*  ----------------------- FOOTER ----------------------- */
 
 footer{
-    background-color: #7ace67;
+    background-color: rgb(236, 197, 137);
     border-radius: 10px 10px 0px 0px; 
     padding: 1.5rem; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
