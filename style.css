@@ -25,20 +25,75 @@ nav {
 
 }
 
+
+header input {
+    display: none;
+}
+
+
+/*------------------------ LOGO  --------------------------*/
+
 nav .nav_logo{
+    display: flex;
+}
+
+.estilos_logo{
     color: #000000;
     font-size: 28px;
     font-weight: 500;
     letter-spacing: .5px;
 }
 
+.arg_celeste{
+    color:#6bbfe0!important;
+}
+
+.arg_blanco{
+    color:white!important;
+}
+
+.nav_logo:hover > .palta{
+    animation: rebote 1s;
+}
+
+@keyframes rebote {
+    3%{
+        transform: translateY(-5%);
+    }
+    6%{
+        transform: translateY(-10%);
+    }
+    10%{
+        transform: translateY(-20%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(-10%);
+    }
+    60%{
+        transform: translateY(0%);
+    }
+    80%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/*------------------------ PAGINAS DEL HEADER  --------------------------*/
+
 nav .nav_paginas {
     display: flex;
+
 }
 
 nav .nav_paginas .nav_pag {
     cursor: pointer;
     height: 100%;
+    font-size: 15px;
     padding: 0 30px;
     transition: .4s;
     color:#000000;
@@ -47,11 +102,6 @@ nav .nav_paginas .nav_pag {
 nav .nav_paginas .nav_pag:hover {
     background: #b4954b;
 }
-
-header input {
-    display: none;
-}
-
 
 /*  ----------------------- BODY ----------------------- */
 main
@@ -69,7 +119,7 @@ main
 }
 
 .card{
-    background-color: bisque;
+    background-color: #b4954b;
     width: 20rem;
     border: 2rem;
     padding: 0.8rem;
@@ -80,7 +130,7 @@ main
 
 .card img{
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 .card div{
@@ -92,37 +142,9 @@ main
     padding: 0.3rem;
 }
 
-/* --------------------------- GRID ABOUT US ---------------------------*/
+/* --------------------------- ABOUT US ---------------------------*/
 
-.grid_about_us{
-    display: grid;
-    grid-template-columns: 50% 50% ;
-    grid-template-rows: 3rem min-content;
-    grid-template-areas: 
-    "img_au title_au"
-    "img_au parrafo_au"
-    ;
-    justify-items: center;
-    gap: 1rem;
-    font-family: arial;
-}
 
-.grid_about_us_img
-{
-    grid-area: img_au;
-    width: 100%;
-}
-
-.grid_about_us_title
-{
-    grid-area: title_au;
-    margin: 0.5rem;
-}
-
-.grid_about_us_parrafo
-{
-    grid-area: parrafo_au;
-}
 
 
 /* --------------------------- FORMULARIO ---------------------------*/
@@ -177,6 +199,7 @@ form h3{
 {
     grid-area: img_u;
     width: 20%;
+    cursor: pointer;
 }
 
 .grid_user_name
@@ -227,17 +250,19 @@ z-index: 2;
     position: absolute;
     grid-area: img_u;
     width: 30%;
+    cursor: pointer;
     z-index: 1;
 }
 
 .grid_user_img:hover ~ .cambiar_imagen{
     display:block;
     opacity: 70%;
+    
 }   
 
 .boton:hover
 {
-    background-color: #b4954b;
+    background-color: bisque;
 }
 /*  ----------------------- FOOTER ----------------------- */
 
@@ -284,8 +309,13 @@ font-size: 0.8rem;
         justify-content: space-around;
     }
 
+    nav .nav_logo{
+        font-size: 20px;
+    }
+
     nav .nav_paginas .nav_pag {
         padding: 0 15px;
+        font-size: 13px;
     }
 
     /* -------------------------- CONTACTO -------------------------- */
@@ -323,6 +353,10 @@ font-size: 0.8rem;
         transform: translateY(-100%);
         z-index: -1;
         transition: .6s;
+    }
+
+    nav .nav_logo{
+        font-size: 28px;
     }
 
     nav .nav_paginas .nav_pag {
@@ -381,6 +415,10 @@ font-size: 0.8rem;
     input:checked ~ nav .nav_menu .bar:nth-child(3) {
         transform: rotate(-45deg);
     }
+
+    /* -------------------------- ABOUT US -------------------------- */
+
+
 
 
     /* -------------------------- CONTACTO -------------------------- */
