@@ -346,6 +346,52 @@ footer{
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
 
+@media screen and (max-width:900px){
+   /* -------------------------- ABOUT US -------------------------- */
+    .contenedor_about_us{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .texto_about_us{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    
+    .carrusel_about_us{
+        width: 100%;
+        float:inline-end;
+        display: block;
+        margin: auto;
+    }
+    
+    .titulo_about_us{
+        text-align: center;
+        justify-content: center;
+    }
+    .subtitulo_about_us
+    {
+    
+        text-align: center;
+        justify-content: center;
+    }
+    .parrafo_about_us{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .carrusel_about_us img{
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width:auto;
+    }
+}
+
 @media screen and (max-width:780px){
 
     /* -------------------------- NAV -------------------------- */
@@ -368,53 +414,7 @@ footer{
     .formulario{
         margin: 3% auto;
         width: 60%;
-    }
-    
-    /* -------------------------- ABOUT US -------------------------- */
-
-.contenedor_about_us{
-    float: none;
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
-.texto_about_us{
-    float: none;
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
-.carrusel_about_us{
-    width: 100%;
-    float:inline-end;
-    display: block;
-    margin: auto;
-}
-
-.titulo_about_us{
-    text-align: center;
-    justify-content: center;
-}
-.subtitulo_about_us
-{
-
-    text-align: center;
-    justify-content: center;
-}
-.parrafo_about_us{
-    text-align: center;
-    justify-content: center;
-}
-
-.carrusel_about_us img{
-width: 100%;
-height: auto;
-display: block;
-max-width:auto;
-}
-
+    }    
     /* -------------------------- USER -------------------------- */
 
     .grid_user_img{
