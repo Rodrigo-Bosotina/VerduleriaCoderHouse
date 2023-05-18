@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
-    font-size: 13px;
+    font-size: 12px;
 }
 
 a
@@ -104,10 +104,18 @@ nav .nav_paginas .nav_pag:hover {
 }
 
 /*  ----------------------- BODY ----------------------- */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+
 main
 {
-    margin-top:1rem;
-    margin-bottom: 8rem;
+    flex: 1;
 }
 
 /* --------------------------- INDEX ---------------------------*/
@@ -143,11 +151,51 @@ main
 }
 
 /* --------------------------- ABOUT US ---------------------------*/
+.about_us{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 
+}
 
+.contenedor_about_us{
+    width: 80%;
+    display: block;
+    margin:auto;
+}
 
+.texto_about_us{
+    float: left;
+    width: 55%;
+}
 
-/* --------------------------- FORMULARIO ---------------------------*/
+.carrusel_about_us{
+    float: right;
+    width: 40%;
+}
+
+.carrusel_about_us img{
+    width: 100%;
+    height: auto;
+}
+
+.titulo_about_us{
+    text-transform: uppercase;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.subtitulo_about_us{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    opacity: 60%;
+}
+
+/* --------------------------- CONTACTO ---------------------------*/
 
 .formulario{
     margin: 5% auto;
@@ -170,11 +218,14 @@ form h2{
 
 form h3{
     margin: 1rem;
+    text-align: center;
 }
 
 /* --------------------------- GRID USUARIO ---------------------------*/
 .grid_user
 {
+    margin-top: 1rem;
+    margin-bottom:1rem;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
@@ -268,18 +319,15 @@ z-index: 2;
 
 footer{
     background-color: rgb(236, 197, 137);
-    border-radius: 10px 10px 0px 0px; 
-    padding: 1.5rem; 
+    padding: 1rem; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    bottom: 0px;
+    position: relative;
+    flex-shrink: 0;
 }
 
 .redes{
-    width: 6rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -289,14 +337,11 @@ footer{
 
 .redes img{
     display: block;
-    width: 2rem;
+    width: 2.5rem;
     height: 70%;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
 }
 
-footer p{
-font-size: 0.8rem;
-}
 
 
 /* ----------------------- MEDIA QUERIES ----------------------- */
@@ -325,6 +370,51 @@ font-size: 0.8rem;
         width: 60%;
     }
     
+    /* -------------------------- ABOUT US -------------------------- */
+
+.contenedor_about_us{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.texto_about_us{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.carrusel_about_us{
+    width: 100%;
+    float:inline-end;
+    display: block;
+    margin: auto;
+}
+
+.titulo_about_us{
+    text-align: center;
+    justify-content: center;
+}
+.subtitulo_about_us
+{
+
+    text-align: center;
+    justify-content: center;
+}
+.parrafo_about_us{
+    text-align: center;
+    justify-content: center;
+}
+
+.carrusel_about_us img{
+width: 100%;
+height: auto;
+display: block;
+max-width:auto;
+}
+
     /* -------------------------- USER -------------------------- */
 
     .grid_user_img{
@@ -338,6 +428,15 @@ font-size: 0.8rem;
     .grid_user_card img{
         width: 10%
     }
+
+
+
+/* -------------------------- FOOTER -------------------------- */
+
+.copyright{
+    font-size: 11px;
+}
+
 }
 
 @media screen and (max-width:500px){
@@ -443,7 +542,7 @@ font-size: 0.8rem;
 
 /* -------------------------- FOOTER -------------------------- */
 
-    footer div p, footer div em{
-        font-size: 8px;
+    .copyright{
+        font-size: 9px;
     }
 }
