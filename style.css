@@ -25,7 +25,19 @@ nav {
 
 }
 
+
+header input {
+    display: none;
+}
+
+
+/*------------------------ LOGO  --------------------------*/
+
 nav .nav_logo{
+    display: flex;
+}
+
+.estilos_logo{
     color: #000000;
     font-size: 28px;
     font-weight: 500;
@@ -40,13 +52,48 @@ nav .nav_logo{
     color:white!important;
 }
 
+.nav_logo:hover > .palta{
+    animation: rebote 2s;
+}
+
+@keyframes rebote {
+    3%{
+        transform: translateY(-5%);
+    }
+    6%{
+        transform: translateY(-10%);
+    }
+    10%{
+        transform: translateY(-20%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(-10%);
+    }
+    60%{
+        transform: translateY(0%);
+    }
+    80%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+/*------------------------ PAGINAS DEL HEADER  --------------------------*/
+
 nav .nav_paginas {
     display: flex;
+
 }
 
 nav .nav_paginas .nav_pag {
     cursor: pointer;
     height: 100%;
+    font-size: 15px;
     padding: 0 30px;
     transition: .4s;
     color:#000000;
@@ -55,11 +102,6 @@ nav .nav_paginas .nav_pag {
 nav .nav_paginas .nav_pag:hover {
     background: #b4954b;
 }
-
-header input {
-    display: none;
-}
-
 
 /*  ----------------------- BODY ----------------------- */
 main
@@ -88,7 +130,7 @@ main
 
 .card img{
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
 .card div{
@@ -111,9 +153,13 @@ main
     "img_au parrafo_au"
     ;
     justify-items: center;
-    gap: 1rem;
     font-family: arial;
-    margin-bottom: 10rem;
+}
+
+.carrusel{
+    width:100%;
+    height: 30%;
+    overflow: auto;
 }
 
 .grid_about_us_img
@@ -131,6 +177,7 @@ main
 .grid_about_us_parrafo
 {
     grid-area: parrafo_au;
+    margin: 0.5rem;
 }
 
 /* --------------------------- FORMULARIO ---------------------------*/
@@ -295,8 +342,13 @@ font-size: 0.8rem;
         justify-content: space-around;
     }
 
+    nav .nav_logo{
+        font-size: 20px;
+    }
+
     nav .nav_paginas .nav_pag {
         padding: 0 15px;
+        font-size: 13px;
     }
 
     /* -------------------------- CONTACTO -------------------------- */
@@ -334,6 +386,10 @@ font-size: 0.8rem;
         transform: translateY(-100%);
         z-index: -1;
         transition: .6s;
+    }
+
+    nav .nav_logo{
+        font-size: 28px;
     }
 
     nav .nav_paginas .nav_pag {
@@ -391,6 +447,21 @@ font-size: 0.8rem;
     
     input:checked ~ nav .nav_menu .bar:nth-child(3) {
         transform: rotate(-45deg);
+    }
+
+    /* -------------------------- ABOUT US -------------------------- */
+
+
+    .grid_about_us{
+        grid-template-areas: 
+        "img_au img_au"
+        "title_au parrafo_au"!important
+        ;
+        
+    }
+
+    .grid_about_us_parrafo{
+        grid-area: parrafo_au;
     }
 
 
