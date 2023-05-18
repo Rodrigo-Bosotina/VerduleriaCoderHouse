@@ -128,7 +128,7 @@ main
 
 .card{
     background-color: #b4954b;
-    width: 20rem;
+    width: 25rem;
     border: 2rem;
     padding: 0.8rem;
     border-radius: 5%;
@@ -139,6 +139,7 @@ main
 .card img{
     width: 100%;
     height: 100%;
+    border-radius: 5%;
 }
 
 .card div{
@@ -146,8 +147,9 @@ main
     justify-content: space-between;
 }
 .card div a{
-    background-color: rgb(211, 228, 243);
-    padding: 0.3rem;
+    background-color: #ddd;
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 /* --------------------------- ABOUT US ---------------------------*/
@@ -185,7 +187,7 @@ main
     font-size: 28px;
     display: flex;
     justify-content: center;
-    
+    margin-top: 2rem;
 }
 
 .subtitulo_about_us{
@@ -194,6 +196,13 @@ main
     justify-content: center;
     opacity: 60%;
 }
+
+.parrafo_about_us{   
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 
 /* --------------------------- CONTACTO ---------------------------*/
 
