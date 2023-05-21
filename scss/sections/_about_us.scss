@@ -1,0 +1,52 @@
+.about_us{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .contenedor_about_us
+    {
+        width: 80%;
+        display: block;
+        margin:auto;
+        .texto_about_us
+        {
+            float: left;
+            width: 55%;
+            .titulo_about_us
+            {
+                text-transform: uppercase;
+                font-size: 28px;
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+
+            .subtitulo_about_us{
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                opacity: 60%;
+            }
+
+
+            .parrafo_about_us{   
+                align-items: center;
+                justify-content: center;
+                margin-top: 2rem;
+            }
+            
+        }
+
+        .carrusel_about_us
+        {
+            float: right;
+            width: 40%;
+            img
+            {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+    }
+}

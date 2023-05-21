@@ -1,0 +1,185 @@
+
+@media screen and (max-width:1024px) {
+
+    /* -------------------------- ABOUT US -------------------------- */
+    .contenedor_about_us {
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        .texto_about_us 
+        {
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+            .titulo_about_us 
+            {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .subtitulo_about_us {
+
+                text-align: center;
+                justify-content: center;
+            }
+
+            .parrafo_about_us {
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        .carrusel_about_us 
+        {
+            width: 100%;
+            float: inline-end;
+            display: block;
+            margin: auto;
+            .carrusel_about_us img 
+            {
+                width: 100%;
+                height: auto;
+                display: block;
+                max-width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px)
+{
+
+    /* -------------------------- NAV -------------------------- */
+
+    nav {
+        justify-content: space-around;
+        .nav_logo
+        {
+            font-size: 20px;
+        }
+
+        .nav_paginas
+        {
+            .nav_pag 
+            {
+                padding: 0 15px;
+                font-size: 13px;
+            }
+        }
+    }
+
+
+    /* -------------------------- CONTACTO -------------------------- */
+
+    .formulario{
+        margin: 3% auto;
+        width: 60%;
+    }    
+    /* -------------------------- USER -------------------------- */
+
+    .grid_user
+    {
+        .grid_user_img
+        {
+            width: 25%;
+        }
+
+        .grid_user_card img{
+            width: 10%
+        }
+
+        .cambiar_imagen{
+            width: 40%;
+        }
+    }
+
+    /* -------------------------- FOOTER -------------------------- */
+
+.copyright
+    {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (max-width:480px)
+{
+
+    /* -------------------------- NAV -------------------------- */
+    nav{
+        .nav_paginas {
+        display: grid;
+        position: absolute;
+        background: rgb(236, 197, 137);
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+        .nav_pag 
+        {
+            padding-left: 35px;
+            text-align: center;
+
+            .nav-link
+            {
+                padding: auto;
+                width: 100%;
+            }
+        }
+        }
+
+        .nav_logo{
+            font-size: 28px;
+        }
+        
+        .nav_menu {
+            display: grid !important;
+            display: none;
+            height: min-content;
+            margin: 18px -10px 0 0;
+            cursor: pointer;
+
+            .bar 
+            {
+                width: 40px;
+                height: 5px;
+                margin-bottom: 10px;
+                background: #000000;
+                border-radius: 10%;
+                transition: .4s;
+            }
+        }
+    
+    }
+
+
+    input:checked ~ nav{
+        margin-bottom: 24rem;
+    }
+
+    input:checked ~ nav .nav_paginas {
+        transform: translateY(0);
+        z-index: 1;
+    
+    }
+
+    input:checked ~ nav .nav_menu {
+        margin-top: 35px;
+    }
+    
+    input:checked ~ nav .nav_menu .bar:nth-child(1) {
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    input:checked ~ nav .nav_menu .bar:nth-child(2) {
+        display: none;
+    }
+    
+    input:checked ~ nav .nav_menu .bar:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}

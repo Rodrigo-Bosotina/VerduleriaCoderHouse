@@ -1,0 +1,89 @@
+.grid_user
+{
+    margin-top: 1rem;
+    margin-bottom:1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content;
+    grid-template-areas:
+    "img_u"
+    "nom_u"
+    "ape_u"
+    "mail_u"
+    "dir_u"
+    "tel_u"
+    "tar_u"
+    "bot_u"
+    ;
+    justify-items: center;
+    gap: 1rem;
+    font-family: arial;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    .grid_user_img
+    {
+        grid-area: img_u;
+        width: 20%;
+        cursor: pointer;
+
+        &:hover ~ .cambiar_imagen{
+            display:block;
+            opacity: 70%;
+            
+        }   
+    }
+
+    .grid_user_name
+    {
+        grid-area:nom_u;
+        z-index: 2;
+    }
+
+
+    .grid_user_mail
+    {
+        grid-area: mail_u;
+        z-index: 2;
+    }
+
+    .grid_user_surname
+    {
+        grid-area: ape_u;
+        z-index: 2;
+    }
+
+    .grid_user_direction
+    {
+        grid-area: dir_u;
+    }
+
+    .grid_user_card
+    {
+        display: flex;
+        justify-content: center;
+        grid-area: tar_u;
+        img
+        {
+            width: 5%;
+        }
+    }
+
+    .grid_user_tel{
+        grid-area: tel_u;
+    }
+
+    .grid_user_button
+    {
+        grid-area: bot_u;
+    }
+
+    .cambiar_imagen{
+        display: none;
+        position: absolute;
+        grid-area: img_u;
+        width: 30%;
+        cursor: pointer;
+        z-index: 1;
+    }
+}

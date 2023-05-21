@@ -1,0 +1,86 @@
+/*  ----------------------- HEADER ----------------------- */
+header input {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15%;
+    height: 75px;
+    line-height: 75px;
+    background: rgb(236, 197, 137);
+
+    .nav_logo{
+        display: flex;
+        &:hover > .palta
+        {
+            animation: rebote 1s;
+        }
+        .estilos_logo
+        {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: .5px;
+        }
+
+        .arg_celeste
+        {
+            color:#6bbfe0!important;
+        }
+        
+        .arg_blanco
+        {
+            color:white!important;
+        }
+
+    }
+/* ---------------------------- CONJUNTO DE PAGINAS --------------------------- */
+    .nav_paginas 
+    {
+        display: flex;
+
+/* ---------------------------- CADA PAGINA POR SEPARADO --------------------------- */
+        .nav_pag 
+        {
+            cursor: pointer;
+            height: 100%;
+            font-size: 15px;
+            padding: 0 30px;
+            transition: .4s;
+            color:#000000;
+            &:hover 
+            {
+                background: #b4954b;
+            }
+        }
+    }
+
+@keyframes rebote {
+    3%{
+        transform: translateY(-5%);
+    }
+    6%{
+        transform: translateY(-10%);
+    }
+    10%{
+        transform: translateY(-20%);
+    }
+    20%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(-10%);
+    }
+    60%{
+        transform: translateY(0%);
+    }
+    80%{
+        transform: translateY(-5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+}

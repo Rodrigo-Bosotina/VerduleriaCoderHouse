@@ -1,0 +1,22 @@
+footer{
+    background-color: rgb(236, 197, 137);
+    padding: 1rem; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-shrink: 0;
+    .redes{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        img{
+            display: block;
+            width: 2.5rem;
+            height: 70%;
+            margin-left: 1rem;
+        }
+    }
+}
