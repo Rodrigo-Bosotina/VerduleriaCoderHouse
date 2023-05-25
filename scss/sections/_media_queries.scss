@@ -2,49 +2,54 @@
 @media screen and (max-width:1024px) {
 
     /* -------------------------- ABOUT US -------------------------- */
-    .contenedor_about_us {
-        float: none;
-        width: 100%;
-        display: block;
-        margin: auto;
-        .texto_about_us 
-        {
+    .about_us{
+        flex-direction: column;
+        .contenedor_about_us {
             float: none;
             width: 100%;
             display: block;
             margin: auto;
-            .titulo_about_us 
+
+            .texto_about_us 
             {
-                text-align: center;
-                justify-content: center;
+                float: none;
+                width: 100%;
+                display: block;
+                .titulo_about_us 
+                {
+                    text-align: center;
+                    justify-content: center;
+                }
+    
+                .subtitulo_about_us {
+    
+                    text-align: center;
+                    justify-content: center;
+                }
+    
+                .parrafo_about_us {
+                    text-align: center;
+                    justify-content: center;
+                }
             }
-
-            .subtitulo_about_us {
-
-                text-align: center;
-                justify-content: center;
-            }
-
-            .parrafo_about_us {
-                text-align: center;
-                justify-content: center;
-            }
-        }
-        .carrusel_about_us 
-        {
-            width: 100%;
-            float: inline-end;
-            display: block;
-            margin: auto;
-            .carrusel_about_us img 
+    
+            .carrusel_about_us 
             {
                 width: 100%;
-                height: auto;
+                float: inline-end;
                 display: block;
-                max-width: auto;
+                margin:1rem 0;
+                .carrusel_about_us img 
+                {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    max-width: auto;
+                }
             }
         }
     }
+    
 }
 
 @media screen and (max-width:768px)
@@ -56,7 +61,7 @@
         justify-content: space-around;
         .nav_logo
         {
-            font-size: 20px;
+            font-size: $tamanio-letra-logo-medio;
         }
 
         .nav_paginas
@@ -64,7 +69,7 @@
             .nav_pag 
             {
                 padding: 0 15px;
-                font-size: 13px;
+                font-size: $tamanio-letra-links-medio;
             }
         }
     }
@@ -82,7 +87,7 @@
     {
         .grid_user_img
         {
-            width: 25%;
+            width: 35%;
         }
 
         .grid_user_card img{
@@ -90,7 +95,7 @@
         }
 
         .cambiar_imagen{
-            width: 40%;
+            width: 50%;
         }
     }
 
@@ -98,7 +103,7 @@
 
 .copyright
     {
-        font-size: 11px;
+        font-size: $tamanio-letra-texto-chico;
     }
 }
 
@@ -108,10 +113,35 @@
 
     /* -------------------------- NAV -------------------------- */
     nav{
-        .nav_paginas {
+
+        .nav_logo{
+            font-size: $tamanio-letra-logo-grande;
+        }
+
+
+        .nav_menu {
+            display: grid !important;
+            display: none;
+            height: min-content;
+            margin: 18px -10px 0 0;
+            cursor: pointer;
+
+            .bar 
+            {
+                width: 40px;
+                height: 5px;
+                margin-bottom: 10px;
+                background: $color-letra;
+                border-radius: 10%;
+                transition: .4s;
+            }
+        }
+
+        .nav_paginas 
+        {
         display: grid;
         position: absolute;
-        background: rgb(236, 197, 137);
+        background: $color-principal;
         width: 100%;
         top: 75px;
         left: 0;
@@ -130,29 +160,6 @@
             }
         }
         }
-
-        .nav_logo{
-            font-size: 28px;
-        }
-        
-        .nav_menu {
-            display: grid !important;
-            display: none;
-            height: min-content;
-            margin: 18px -10px 0 0;
-            cursor: pointer;
-
-            .bar 
-            {
-                width: 40px;
-                height: 5px;
-                margin-bottom: 10px;
-                background: #000000;
-                border-radius: 10%;
-                transition: .4s;
-            }
-        }
-    
     }
 
 

@@ -5,23 +5,26 @@
     align-items: center;
     .contenedor_about_us
     {
-        width: 80%;
+        width: 90%;
         display: block;
         margin:auto;
         .texto_about_us
         {
+            height: 400px;
+            overflow: scroll;
             float: left;
             width: 55%;
             .titulo_about_us
             {
                 text-transform: uppercase;
-                font-size: 28px;
+                font-size: tamanio-letra-titulo;
                 display: flex;
                 justify-content: center;
                 margin-top: 2rem;
             }
 
             .subtitulo_about_us{
+                font-size: tamanio-letra-titulo;
                 text-transform: uppercase;
                 display: flex;
                 justify-content: center;

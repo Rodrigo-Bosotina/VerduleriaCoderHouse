@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
+  font-family: "Montserrat" !important;
   font-size: 12px;
 }
 
@@ -77,9 +77,9 @@ nav .nav_paginas {
 }
 nav .nav_paginas .nav_pag {
   cursor: pointer;
-  height: 100%;
+  height: 75px;
   font-size: 15px;
-  padding: 0 30px;
+  padding: 0 35px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   color: #000000;
@@ -179,6 +179,9 @@ nav .nav_paginas .nav_pag:hover {
   height: 100%;
   border-radius: 5%;
 }
+.verduras .card h3 {
+  font-size: 18px;
+}
 .verduras .card div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +196,7 @@ nav .nav_paginas .nav_pag:hover {
   border-radius: 50%;
 }
 .verduras .card div .boton:hover {
-  background-color: bisque;
+  background-color: rgb(236, 197, 137);
 }
 
 .about_us {
@@ -207,17 +210,19 @@ nav .nav_paginas .nav_pag:hover {
           align-items: center;
 }
 .about_us .contenedor_about_us {
-  width: 80%;
+  width: 90%;
   display: block;
   margin: auto;
 }
 .about_us .contenedor_about_us .texto_about_us {
+  height: 400px;
+  overflow: scroll;
   float: left;
   width: 55%;
 }
 .about_us .contenedor_about_us .texto_about_us .titulo_about_us {
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: tamanio-letra-titulo;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,6 +232,7 @@ nav .nav_paginas .nav_pag:hover {
   margin-top: 2rem;
 }
 .about_us .contenedor_about_us .texto_about_us .subtitulo_about_us {
+  font-size: tamanio-letra-titulo;
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +293,6 @@ nav .nav_paginas .nav_pag:hover {
   grid-template-areas: "img_u" "nom_u" "ape_u" "mail_u" "dir_u" "tel_u" "tar_u" "bot_u";
   justify-items: center;
   gap: 1rem;
-  font-family: arial;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -341,6 +346,9 @@ nav .nav_paginas .nav_pag:hover {
   cursor: pointer;
   z-index: 1;
 }
+.grid_user .user_estilo {
+  font-size: 18px;
+}
 
 footer {
   background-color: rgb(236, 197, 137);
@@ -379,43 +387,48 @@ footer .redes img {
 
 @media screen and (max-width: 1024px) {
   /* -------------------------- ABOUT US -------------------------- */
-  .contenedor_about_us {
+  .about_us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about_us .contenedor_about_us {
     float: none;
     width: 100%;
     display: block;
     margin: auto;
   }
-  .contenedor_about_us .texto_about_us {
+  .about_us .contenedor_about_us .texto_about_us {
     float: none;
     width: 100%;
     display: block;
-    margin: auto;
   }
-  .contenedor_about_us .texto_about_us .titulo_about_us {
+  .about_us .contenedor_about_us .texto_about_us .titulo_about_us {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contenedor_about_us .texto_about_us .subtitulo_about_us {
+  .about_us .contenedor_about_us .texto_about_us .subtitulo_about_us {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contenedor_about_us .texto_about_us .parrafo_about_us {
+  .about_us .contenedor_about_us .texto_about_us .parrafo_about_us {
     text-align: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .contenedor_about_us .carrusel_about_us {
+  .about_us .contenedor_about_us .carrusel_about_us {
     width: 100%;
     float: inline-end;
     display: block;
-    margin: auto;
+    margin: 1rem 0;
   }
-  .contenedor_about_us .carrusel_about_us .carrusel_about_us img {
+  .about_us .contenedor_about_us .carrusel_about_us .carrusel_about_us img {
     width: 100%;
     height: auto;
     display: block;
@@ -442,42 +455,21 @@ footer .redes img {
   }
   /* -------------------------- USER -------------------------- */
   .grid_user .grid_user_img {
-    width: 25%;
+    width: 35%;
   }
   .grid_user .grid_user_card img {
     width: 10%;
   }
   .grid_user .cambiar_imagen {
-    width: 40%;
+    width: 50%;
   }
   /* -------------------------- FOOTER -------------------------- */
   .copyright {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 480px) {
   /* -------------------------- NAV -------------------------- */
-  nav .nav_paginas {
-    display: grid;
-    position: absolute;
-    background: rgb(236, 197, 137);
-    width: 100%;
-    top: 75px;
-    left: 0;
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    z-index: -1;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-  }
-  nav .nav_paginas .nav_pag {
-    padding-left: 35px;
-    text-align: center;
-  }
-  nav .nav_paginas .nav_pag .nav-link {
-    padding: auto;
-    width: 100%;
-  }
   nav .nav_logo {
     font-size: 28px;
   }
@@ -498,6 +490,27 @@ footer .redes img {
     border-radius: 10%;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+  }
+  nav .nav_paginas {
+    display: grid;
+    position: absolute;
+    background: rgb(236, 197, 137);
+    width: 100%;
+    top: 75px;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    z-index: -1;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+  }
+  nav .nav_paginas .nav_pag {
+    padding-left: 35px;
+    text-align: center;
+  }
+  nav .nav_paginas .nav_pag .nav-link {
+    padding: auto;
+    width: 100%;
   }
   input:checked ~ nav {
     margin-bottom: 24rem;

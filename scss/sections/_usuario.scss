@@ -17,7 +17,6 @@
     ;
     justify-items: center;
     gap: 1rem;
-    font-family: arial;
     margin-left: 2rem;
     margin-right: 2rem;
 
@@ -85,5 +84,8 @@
         width: 30%;
         cursor: pointer;
         z-index: 1;
+    }
+    .user_estilo{
+        font-size: $tamanio-letra-titulo;
     }
 }

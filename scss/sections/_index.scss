@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     .card
     {
-        background-color: #b4954b;
+        background-color: $color-secundario;
         width: 25rem;
         border: 2rem;
         padding: 0.8rem;
@@ -19,17 +19,21 @@
             border-radius: 5%;
         }
 
+        h3{
+            font-size: $tamanio-letra-titulo;
+        }
+
         div
         {
             display: flex;
             justify-content: space-between;
             .boton
             {
-                background-color: #ddd;
+                background-color: $color-fondo;
                 padding: 1rem;
                 border-radius: 50%;
                 &:hover{
-                    background-color: bisque;
+                    background-color: $color-principal;
                 }
             }
         }

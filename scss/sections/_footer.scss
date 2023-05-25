@@ -1,7 +1,7 @@
 footer{
-    background-color: rgb(236, 197, 137);
+    background-color: $color-principal;
     padding: 1rem; 
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 -2px 5px $color-sombra;
     display: flex;
     justify-content: space-between;
     position: relative;
