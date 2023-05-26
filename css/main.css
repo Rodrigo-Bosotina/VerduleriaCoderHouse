@@ -216,7 +216,7 @@ nav .nav_paginas .nav_pag:hover {
 }
 .about_us .contenedor_about_us .texto_about_us {
   height: 400px;
-  overflow: scroll;
+  overflow: auto;
   float: left;
   width: 55%;
 }
@@ -350,6 +350,33 @@ nav .nav_paginas .nav_pag:hover {
   font-size: 18px;
 }
 
+.main_404 {
+  background-image: url(../../assets/imgs/formato-palta.avif);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.main_404 img {
+  width: 20%;
+  display: block;
+  margin: auto;
+}
+.main_404 a {
+  padding: 2rem 7rem;
+  background-color: rgb(236, 197, 137);
+  font-size: 15px;
+  color: #000000;
+  margin: auto;
+}
+.main_404 a:hover {
+  background-color: #b4954b;
+}
+
 footer {
   background-color: rgb(236, 197, 137);
   padding: 1rem;
@@ -463,6 +490,9 @@ footer .redes img {
   .grid_user .cambiar_imagen {
     width: 50%;
   }
+  .main_404 img {
+    width: 35%;
+  }
   /* -------------------------- FOOTER -------------------------- */
   .copyright {
     font-size: 10px;
@@ -534,5 +564,8 @@ footer .redes img {
   input:checked ~ nav .nav_menu .bar:nth-child(3) {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+  }
+  .main_404 img {
+    width: 50%;
   }
 }

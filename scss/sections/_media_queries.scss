@@ -99,6 +99,12 @@
         }
     }
 
+.main_404 img{
+    width: 35%;
+}
+
+
+
     /* -------------------------- FOOTER -------------------------- */
 
 .copyright
@@ -188,5 +194,10 @@
     
     input:checked ~ nav .nav_menu .bar:nth-child(3) {
         transform: rotate(-45deg);
+    }
+
+
+    .main_404 img{
+        width: 50%;
     }
 }

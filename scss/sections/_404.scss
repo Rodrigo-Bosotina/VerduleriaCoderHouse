@@ -1,0 +1,23 @@
+.main_404{
+        background-image: url(../../assets/imgs/formato-palta.avif);
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        img{
+            width: 20%;
+            display: block;
+            margin: auto;
+        }
+
+        a{
+            padding: 2rem 7rem;
+            background-color: $color-principal;
+            font-size: $tamanio-letra-links;
+            color: $color-letra;
+            margin: auto;
+            &:hover{
+                background-color: $color-secundario;
+            }
+        }
+    }
