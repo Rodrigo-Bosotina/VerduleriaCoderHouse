@@ -43,14 +43,17 @@
     </header>
     <br>
     <main>
-        <form class="formulario" action="">
-            <h2> Correo </h2>
-            <!-- Puse el nombre como un h3, en lugar de un imput, ya que pense mi pagina como un sitio en el que te tenés que loggear para poder hacer cualquier cosa-->
-            <h3> Nombre: Rodrigo Bosotina </h3> 
-            <input class="formulario_input" id="Asunto" type="text" placeholder="Asunto">
-            <textarea class="formulario_input" name="Correo" placeholder="Escriba su Correo"></textarea>
-            <input class="formulario_input" type="submit" value="Enviar Correo" id="formulario_boton">
-        </form>
+        <div class="formulario">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Direccion de Correo Electronica</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correoelectronicodeejemplo@gmail.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Correo</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <input class="formulario_input" type="submit" value="Enviar Correo" id="boton_form">
+        </div>
     </main>
 
     <footer>

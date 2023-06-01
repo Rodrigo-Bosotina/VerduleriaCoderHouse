@@ -156,6 +156,19 @@ nav .nav_paginas .nav_pag:hover {
   }
 }
 
+.titulo_index {
+  background-color: rgb(216, 181, 138);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.titulo_index h1 {
+  padding: 2rem;
+}
+
 .verduras {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,12 +188,18 @@ nav .nav_paginas .nav_pag:hover {
   margin: 1.5rem;
 }
 .verduras .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 50%;
   border-radius: 5%;
 }
 .verduras .card h3 {
+  margin-top: 10px;
   font-size: 18px;
+}
+.verduras .card p {
+  height: 90px;
 }
 .verduras .card div {
   display: -webkit-box;
@@ -189,11 +208,14 @@ nav .nav_paginas .nav_pag:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .verduras .card div .boton {
   background-color: #ddd;
-  padding: 1rem;
-  border-radius: 50%;
+  padding: 1rem 4rem;
+  border-radius: 5%;
 }
 .verduras .card div .boton:hover {
   background-color: rgb(236, 197, 137);
@@ -262,18 +284,11 @@ nav .nav_paginas .nav_pag:hover {
 
 .formulario {
   margin: 5% auto;
-  width: 40%;
+  width: 50%;
   background-color: #b4954b;
   padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-.formulario form h2 {
-  text-align: center;
-}
-.formulario form h3 {
-  margin: 1rem;
-  text-align: center;
 }
 .formulario .formulario_input {
   width: 100%;
@@ -351,7 +366,7 @@ nav .nav_paginas .nav_pag:hover {
 }
 
 .main_404 {
-  background-image: url(../../assets/imgs/formato-palta.avif);
+  background-image: url(../../assets/imgs/formato-palta.jpg) !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
