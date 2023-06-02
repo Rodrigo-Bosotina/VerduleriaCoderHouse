@@ -156,7 +156,7 @@ nav .nav_paginas .nav_pag:hover {
   }
 }
 
-.titulo_index {
+.titulo_pagina {
   background-color: rgb(216, 181, 138);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +165,7 @@ nav .nav_paginas .nav_pag:hover {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.titulo_index h1 {
+.titulo_pagina h1 {
   padding: 2rem;
 }
 
@@ -296,6 +296,53 @@ nav .nav_paginas .nav_pag:hover {
   padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.card_carrito {
+  padding: 2rem 1rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(236, 197, 137);
+  width: 100%;
+  height: 12rem;
+}
+.card_carrito img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card_carrito .card_carrito_datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.boton_carrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.boton_carrito input {
+  margin: auto;
+  padding: 1rem;
 }
 
 .grid_user {
